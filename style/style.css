@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cd-dimension: 200px;
+    --my-color: rgb(255, 0, 170);
+    --btn-color: #ccc;
+}
+
+.active {
+    color: red;
+}
+
+.song-item-active {
+    background-color: var(--my-color);
+    color: white;
+}
+
+#main {
+    width: 490px;
+    margin: 50px auto;
+}
+
+.visibility {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 10;
+    background-color: white;
+}
+
+.dashboard {
+    width: 500px;
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    z-index: 99;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h2 {
+    font-weight: 400;
+    color: var(--my-color);
+}
+
+header h3 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.cd {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.cd img {
+    width: var(--cd-dimension);
+    height: var(--cd-dimension);
+    border-radius: 50%;
+}
+
+.control {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-around;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+button i {
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: var(--btn-color);
+    border-radius: 5px;
+}
+
+.control__play .play {
+    display: none;
+}
+
+.playing .pause {
+    display: none;
+}
+
+.playing .play {
+    display: inline-block;
+}
+
+.progress {
+    width: 90%;
+    margin: 15px auto;
+    display: block;
+    appearance: none;
+    height: 10px;
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.progress::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(73, 173, 255);
+    cursor: pointer;
+}
+
+/* play list */
+.play-list {
+    margin-top: 490px;
+}
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 0px 4px #ccc;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.song .icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.song .info {
+    flex: 1;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+.song .info h3 {
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.song .options {
+    margin: 0 15px;
+    font-size: 20px;
+}

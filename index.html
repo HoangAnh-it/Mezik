@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="https://purepng.com/public/uploads/large/purepng.com-music-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596085b6osz.png"
+        />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="stylesheet" href="./style/responsive.css" />
+
+        <title>Mezik</title>
+    </head>
+    <body>
+        <div id="main">
+            <div class="visibility"></div>
+            <div class="dashboard">
+                <header>
+                    <h2>Now playing:</h2>
+                    <h3>Name</h3>
+                </header>
+                <!-- <a href=""></a> -->
+
+                <div class="cd">
+                    <img src="./assets/img/cd.png" alt="" />
+                </div>
+
+                <div class="control">
+                    <button class="control__repeat">
+                        <i class="ti-back-left"></i>
+                    </button>
+
+                    <button class="control__prev">
+                        <i class="ti-control-backward"></i>
+                    </button>
+
+                    <button class="control__play">
+                        <i class="ti-control-play pause"></i>
+                        <i class="ti-control-pause play"></i>
+                    </button>
+
+                    <button class="control__next">
+                        <i class="ti-control-forward"></i>
+                    </button>
+
+                    <button class="control__random">
+                        <i class="ti-control-shuffle"></i>
+                    </button>
+                </div>
+
+                <input type="range" min="0" max="100" step="1" value="0" class="progress" />
+                <audio src=""></audio>
+            </div>
+
+            <div class="play-list"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
